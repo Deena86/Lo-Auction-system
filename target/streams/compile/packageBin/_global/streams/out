@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/deena.loganathan/dev/auction-system/target/scala-2.13/auction-system_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/AuctionSystem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/AuctionSystem$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/AuctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	input[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/input[0m
+[0m[[0m[0mdebug[0m] [0m[0m	input/auctionItems.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/input/auctionItems.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Item.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/models/Item.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Bid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/models/Bid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Bid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/models/Bid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Item$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/models/Item$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystemBoot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/AuctionSystemBoot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/service[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service/auctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/service/auctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service/auctionSystemImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes/service/auctionSystemImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

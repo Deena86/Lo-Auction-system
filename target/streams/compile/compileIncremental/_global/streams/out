@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 15 products, 4 sources, 5 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/AuctionSystem.scala, ${BASE}/src/main/scala/models/Bid.scala, ${BASE}/src/main/scala/models/AuctionItem.scala, ${BASE}/src/main/scala/service/auctionSystemImpl.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/AuctionSystem.scala, ${BASE}/src/main/scala/service/auctionSystemImpl.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/AuctionSystem.scala, ${BASE}/src/main/scala/service/auctionSystemImpl.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(AuctionSystem, AuctionSystemBoot, service.auctionSystem, service.auctionSystemImpl)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(AuctionSystem, AuctionSystemBoot, service.auctionSystem, service.auctionSystemImpl)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/AuctionSystem.scala, ${BASE}/src/main/scala/service/auctionSystemImpl.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: AuctionSystem, AuctionSystemBoot, service.auctionSystem, service.auctionSystemImpl[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding service.auctionSystemImpl by service.auctionSystem[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.4.3:compile for Scala 2.13.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 563a3b99 for Scala compiler version 2.13.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/typesafe/play/play-json_2.13/2.8.2/play-json_2.13-2.8.2.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/typesafe/play/play-functional_2.13/2.8.2/play-functional_2.13-2.8.2.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar:/Users/deena.loganathan/Library/Caches/Coursier/v1/https/artifactory.hootops.com/artifactory/hootsuite-mvn/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.346448794 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m

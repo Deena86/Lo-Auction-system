@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(all {file:/Users/deena.loganathan/dev/auction-system/}auction-system/products {file:/Users/deena.loganathan/dev/auction-system/}auction-system/test:products, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / products, Test / products[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/deena.loganathan/dev/auction-system/src/main/scala/service/auctionSystemImpl.scala:19:7: class auctionSystemImpl needs to be abstract. Missing implementation for:[0m
+[0m[[0m[31merror[0m] [0m[0m  def receiveBidOffer(itemID: String, bid: models.Bid): scala.concurrent.Future[Boolean] // inherited from trait auctionSystem[0m
+[0m[[0m[31merror[0m] [0m[0mclass auctionSystemImpl extends auctionSystem {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/deena.loganathan/dev/auction-system/src/main/scala/service/auctionSystemImpl.scala:74:16: method receiveBidOffer overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class auctionSystemImpl contain the following, non final members named receiveBidOffer:[0m
+[0m[[0m[31merror[0m] [0m[0mdef receiveBidOffer(itemID: String, bid: models.Bid): scala.concurrent.Future[Boolean][0m
+[0m[[0m[31merror[0m] [0m[0m  override def receiveBidOffer(bid: Bid): Future[Boolean] = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 12-Jun-2022 12:06:23 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

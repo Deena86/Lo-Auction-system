@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystemImpl$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystemBoot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystemImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystemImpl$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystemBoot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystemImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystemBoot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystemImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuctionSystem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	auctionSystem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/deena.loganathan/dev/auction-system/target/scala-2.13/classes.bak[0m
