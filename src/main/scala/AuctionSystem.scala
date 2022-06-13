@@ -7,6 +7,7 @@ import scala.io.StdIn.readLine
 import scala.io.{Codec, Source, StdIn}
 import java.io.FileInputStream
 
+/** Entry point of the Auction System */
 object AuctionSystem extends App with AuctionSystemBoot {
   var userInput = 0
   do {
@@ -30,16 +31,17 @@ trait AuctionSystemBoot {
   val ingestionRate: Int = applicationConf.getInt("auction-system.ingestionRate")
   val jsonPath: String = applicationConf.getString("auction-system.jsonPath")
 
-  def loadJson(): Unit = {
+  /** Loads the Json file from the path configured in application.conf */
+  private def loadJson(): Unit = {
 
     val fileInputStream: FileInputStream = new FileInputStream(jsonPath)
 
-    val strItemsOrBids =
+    val strJsonInputStream =
       Source
         .fromInputStream(fileInputStream)((Codec.UTF8))
         .getLines()
         .mkString
-    val jsonItems = Json.parse(strItemsOrBids).as[Seq[JsValue]]
+    val jsonItems = Json.parse(strJsonInputStream).as[Seq[JsValue]]
 
     jsonItems.foreach(i => {
       auctionController.processItemFromJson(i)
@@ -47,7 +49,7 @@ trait AuctionSystemBoot {
     })
   }
 
-  def readJsonInput(): Unit = {
+  private def readJsonInput(): Unit = {
     val jsonString = Iterator
       .continually(readLine())
       .takeWhile(_.nonEmpty)
@@ -61,6 +63,7 @@ trait AuctionSystemBoot {
     }
   }
 
+  /** Menu option prompts for the user */
   def menuOptions(selectedOption: Int): Boolean =
     selectedOption match {
       case 1 =>

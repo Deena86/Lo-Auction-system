@@ -22,7 +22,7 @@ class AuctionServiceImplTest
     val expectedResponse =
       List(AuctionItem("auctionId1", "name", Some("desc"), 20, RawAuctionItem.currentTime, endTime))
 
-    auctionServiceImpl.addNewAuctionItems(auctionItem)
+    auctionServiceImpl.addNewAuctionItem(auctionItem)
     val response: List[AuctionItem] = auctionServiceImpl.auctionItems
     response should equal(expectedResponse)
   }
@@ -37,7 +37,7 @@ class AuctionServiceImplTest
         AuctionItem("auctionId1", "name", Some("desc"), 20, RawAuctionItem.currentTime, endTime)
       )
 
-    auctionServiceImpl.addNewAuctionItems(auctionItem)
+    auctionServiceImpl.addNewAuctionItem(auctionItem)
     val response: List[AuctionItem] = auctionServiceImpl.auctionItems
     response should equal(expectedResponse)
   }
@@ -52,7 +52,7 @@ class AuctionServiceImplTest
 
   "receiveBidOffer" should "match item itemBidsMap" in {
     val auctionItem = RawAuctionItem("auctionId2", "name", "auctionType", Some("desc"), 20)
-    auctionServiceImpl.addNewAuctionItems(auctionItem)
+    auctionServiceImpl.addNewAuctionItem(auctionItem)
 
     val rawBid = RawBid("bidId", "testName", "itemType", Some("itemName"), "auctionId2", 20, 40, 5)
 
@@ -78,7 +78,7 @@ class AuctionServiceImplTest
 
   "receiveBidOffer" should "increase the losing bids" in {
     val auctionItem = RawAuctionItem("auctionId2", "name", "auctionType", Some("desc"), 20)
-    auctionServiceImpl.addNewAuctionItems(auctionItem)
+    auctionServiceImpl.addNewAuctionItem(auctionItem)
 
     val rawBid1 = RawBid("bidId1", "testName", "itemType", Some("itemName"), "auctionId2", 20, 40, 10)
     val rawBid2 = RawBid("bidId2", "testName", "itemType", Some("itemName"), "auctionId2", 25, 40, 5)
@@ -117,20 +117,22 @@ class AuctionServiceImplTest
   }
 
   "printCurrentListings" should "return list of current listings for the item" in {
+    val auctionServiceListings = new AuctionServiceImpl
+
     val auctionItem = RawAuctionItem("auctionId2", "name", "auctionType", Some("desc"), 20)
-    auctionServiceImpl.addNewAuctionItems(auctionItem)
+    auctionServiceListings.addNewAuctionItem(auctionItem)
 
     val rawBid1 = RawBid("bidId1", "testName", "itemType", Some("itemName"), "auctionId2", 20, 40, 10)
     val rawBid2 = RawBid("bidId2", "testName", "itemType", Some("itemName"), "auctionId2", 25, 40, 5)
 
     val exceptedResponse = List(
-      "Item Id: auctionId2    Item Name:    name   Description: Some(desc)   Time Remaining: PT20S   Highest Bid: 30.0"
+      "Item Id: auctionId2    Item Name: name   Description: Some(desc)   Time Remaining: 19  Highest Bid: Some(30.0)"
     )
 
-    auctionServiceImpl.receiveBidOffer(rawBid1)
-    auctionServiceImpl.receiveBidOffer(rawBid2)
+    auctionServiceListings.receiveBidOffer(rawBid1)
+    auctionServiceListings.receiveBidOffer(rawBid2)
 
-    val response = auctionServiceImpl.getCurrentListings
+    val response = auctionServiceListings.getCurrentListings
 
     response should equal(exceptedResponse)
   }

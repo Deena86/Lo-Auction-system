@@ -23,17 +23,15 @@ case class AuctionItem(
 object RawAuctionItem {
   val currentTime: DateTime = DateTime.now()
 
-  def toAuctionItem(item: RawAuctionItem): AuctionItem = {
-    val auctionDuration = item.timeOfAuction
+  def toAuctionItem(item: RawAuctionItem): AuctionItem =
     AuctionItem(
       item.id,
       item.name,
       item.description,
-      auctionDuration,
+      item.timeOfAuction,
       currentTime,
-      currentTime.plusSeconds(auctionDuration)
+      currentTime.plusSeconds(item.timeOfAuction)
     )
-  }
 
   implicit val fmt: Format[RawAuctionItem] = Json.format[RawAuctionItem]
 }
