@@ -10,3 +10,5 @@ libraryDependencies ++= Seq(
   "org.scalatestplus.play" %% "scalatestplus-play"      % "5.1.0" % Test,
   "org.mockito"            %% "mockito-scala-scalatest" % "1.16.49" % Test
 )
+
+trapExit := false
